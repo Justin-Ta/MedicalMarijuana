@@ -4,34 +4,11 @@
     justify-content: center;
     margin-bottom: $mg-2;
     padding: $pd-4 0;
-    .footer__picture__1{
-        transition: all 1s;
+    .img-fluid{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
         &:hover{
-            content: url('../../img/client-1.png');
-        }
-    }
-    .footer__picture__2{
-        transition: all 1s;
-        &:hover{
-            content: url('../../img/client-2.png');
-        }
-    }
-    .footer__picture__3{
-        transition: all 1s;
-        &:hover{
-            content: url('../../img/client-3.png');
-        }
-    }
-    .footer__picture__4{
-        transition: all 1s;
-        &:hover{
-            content: url('../../img/client-4.png');
-        }
-    }
-    .footer__picture__5{
-        transition: all 1s;
-        &:hover{
-            content: url('../../img/client-5.png');
+            filter: none;
         }
     }
 }
