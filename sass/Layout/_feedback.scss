@@ -1,0 +1,40 @@
+.feedback{
+    background-image: url('../../img/parallax-1.jpg');
+    background-position: 50% 0;
+    background-size: cover;
+
+    .feedback__item{
+        margin: 150px 0;
+        background-color: $color-white-0;
+        
+        img{
+            margin: 0 auto;
+            padding: $pd-2 0;
+            width: 150px;
+            height: auto;
+        }
+        .feedback__content{
+            text-align: center;
+            margin: 0 $mg-1;
+            p{
+                font-size: $fs-0;
+                color: $color-gray-0; 
+                line-height: 1.5em;
+                height: 4.5em;
+                overflow: hidden;
+                white-space: normal;
+                text-overflow: ellipsis;
+                width: 100%;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                margin-bottom: $mg-2;
+            }
+            h2{
+                color: $color-green-0;
+                font-size: $fs-2;
+                padding-bottom: $pd-4;
+            }
+        }
+    }
+}

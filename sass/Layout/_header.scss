@@ -1,0 +1,117 @@
+.header__contact{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-top: $mg-1;
+    p{
+        display: inline;
+        color: $color-orange-0;
+        font-weight: $fw-light;
+    }
+    .contact__left{
+        padding-bottom: $pd-1;
+        p{
+            margin-right: $mg-3;
+        }
+    } 
+    .contact__right{
+        padding-bottom: $pd-1;
+        i{
+            @include circleItem(25px, 1px, $color-orange-0, $color-green-0);
+        }
+        p{
+            margin-left: $mg-3;
+        }
+    }
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        background-color: $color-orange-0;
+        opacity: 0.3;
+    }
+}
+#navbar{
+    overflow: hidden;
+    z-index: 100;
+    .navbar{
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        
+        #navbarNav{
+            .navbar-nav {
+                .nav-item{
+                    position: relative;
+                    margin-right: $mg-2;
+                    transition: all 1s;
+                    .nav-link{
+                        color: $color-green-0;
+                        font-size: $fs-2;
+                        font-weight: $fw-bold;
+                    }
+                    &:hover:after{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        height: 1px;
+                        left: 0;
+                        bottom: 0;
+                        background-color: $color-green-0;
+                    }
+                }
+            .active{
+                    position: relative;
+                    transition: all 1s;
+                    &:after{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        height: 1px;
+                        left: 0;
+                        bottom: 0;
+                        background-color: $color-green-0;
+                    }
+                }
+            }
+        }
+        .cart{
+            position: relative;
+            margin-right: $mg-2;
+            i{
+                color: $color-green-0;
+                font-size: 25px;
+            }
+            .cart__item{
+                position: absolute;
+                top: -12px;
+                right: -12px;
+                background-color: $color-white-0;
+                @include circleItem(22px, 1px, $color-green-0, $color-green-0);
+                span{
+                    color: $color-green-0;
+                    font-size: $fs-2;
+                }
+            }
+        }
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+  }
+
+@media screen and (max-width: 768px){
+    .header__contact{
+        display: none;
+    }
+}

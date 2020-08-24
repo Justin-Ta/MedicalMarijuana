@@ -1,0 +1,33 @@
+.info{
+    padding-bottom: $pd-5;
+.info__picture{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display:block;
+    }
+}
+.info__title{
+    h1{
+        font-size: $fs-6;
+        color: $color-green-0;
+    }
+    p{
+        font-family: $ff-tittle;
+        font-size: $fs-2;
+        color: $color-orange-0;
+    }
+}
+.info__item{
+    .col-8{
+        display: flex;
+        align-items: center;
+    }
+    p{
+        font-family: $ff-p;
+        font-size: $fs-0;
+        color: $color-gray-0;
+    }
+}
+}

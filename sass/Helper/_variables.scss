@@ -1,0 +1,73 @@
+// Font- family
+$ff-tittle: 'Cormorant Garamond', serif;
+$ff-p: 'Roboto', sans-serif;
+// variable color
+$color-gray-0: #898989;
+$color-gray-1: #b4b9b6;
+$color-black-0: #000;
+$color-white-0: #ffffff;
+$color-orange-0: #ff785e;
+$color-green-0: #006603;
+$color-green-1: #183424;
+$color-green-2: #506c5c;
+$color-blue-0: #007bff; //primary
+
+// variable font-size
+    // Default
+$fs-0: 15px;
+$fs-1: 14px;
+$fs-2: 22px;
+$fs-3: 30px;
+$fs-4: 35px;
+$fs-5: 40px;
+$fs-6: 60px;
+
+// variable font-weight
+$fw-normal: normal;
+$fw-bold: bold;
+$fw-light: 300;
+
+//variable margin
+$mg-0: 2px;
+$mg-1: 10px;
+$mg-2: 14px;
+$mg-3: 18px;
+$mg-4: 20px;
+
+//variable padding
+$pd-0: 5px; //default
+$pd-1: 10px;
+$pd-2: 20px;
+$pd-3: 30px;
+$pd-4: 40px;
+$pd-5: 50px;
+$pd-6: 60px;
+
+//Font Style
+$fstyle-0: normal;
+$fstyle-1: italic;
+
+//break points
+$breakpoints: (
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px,
+);
+
+@mixin responsive($screen) {
+  //kiem tra screen co ton tai trong $breakponit hay ko
+  @if (map-has-key($map: $breakpoints, $key: $screen)) {
+    // Nếu tìm thấy
+    //Lấy giá trị của screen gán vào cho biến $value
+    $value: map-get(
+      $map: $breakpoints,
+      $key: $screen,
+    );
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn 'Screen ko tồn tại';
+  }
+}

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    scroll-behavior: smooth;
+    font-family: $ff-tittle;
+    color: $color-black-0;
+    font-size: $fs-0;
+    font-weight: $fw-normal;
+    overflow-x: hidden; //horizontal
+  }
+
+  p{
+    font-family: $ff-p;
+  }
+  
+  a {
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  
+  ul {
+    list-style: none;
+  }
+  

@@ -1,0 +1,39 @@
+.contactContent{
+    h1{
+        @include fontText($ff-tittle, $color-green-0, $fs-6, $fw-bold);
+    }
+    h3{
+        @include fontText($ff-tittle, $color-orange-0, $fs-2, $fstyle-1 );
+        
+    }
+    p{
+        @include fontText(null, $color-gray-0, $fs-0, $fstyle-0);
+    }
+    .contactInfo{
+        @include fontText($ff-p, $color-green-0, $fs-0, $fw-normal);
+    }
+}
+.contactLeftMessage{
+    .form-group{
+        input, textarea{
+            @include textBox();
+            margin-bottom: $mg-3;
+        }
+        button{
+           color: $color-green-0;
+           background-color: transparent;
+           font-size: $fs-2;
+           border: 1px solid $color-green-0;
+           border-radius: 0;
+           padding: $pd-1 $pd-3;
+           &:hover{
+               background-color: $color-orange-0;
+               border-color: $color-orange-0;
+               color: $color-white-0;
+           }
+           &:focus{
+               box-shadow: none;
+           }
+       }
+   }
+}

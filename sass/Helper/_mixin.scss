@@ -1,0 +1,36 @@
+@mixin circleItem($wid_hei, $borderTyle, $color, $colorHover) {
+    color: $color;
+    width: $wid_hei;
+    height: $wid_hei;
+    border: $borderTyle solid $color;
+    border-radius: 50%;
+    line-height: $wid_hei;
+    text-align: center;
+    &:hover{
+        color: $colorHover;
+        border-color: $colorHover;
+    }
+}
+
+@mixin fontText($fontFamily, $color, $fontSize, $fontStyle) {
+    font-family: $fontFamily;
+    font-style: $fontStyle;
+    color: $color;
+    font-size: $fontSize;
+}
+
+@mixin textBox() {
+    border: none;
+    border-radius: 0;
+    letter-spacing: 2px;
+    &::placeholder{
+        color: $color-gray-1;
+    }
+    &:focus{
+        &::placeholder{
+            color: $color-black-0;
+        }
+        box-shadow: none;
+    }
+}
+

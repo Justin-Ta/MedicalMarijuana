@@ -1,0 +1,87 @@
+.products{
+.products__title{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    h1{
+        font-size: $fs-6;
+        color: $color-green-0;
+    }
+    p{
+        font-family: $ff-tittle;
+        color: $color-orange-0;
+        font-size: $fs-2;
+    }
+}
+.products__list{
+    .card{
+        border: none;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .card-body{
+            text-align: center;
+            h4{
+                font-size: $fs-2;
+                color: $color-green-0;
+                line-height: 1.5em;
+                height: 1.5em;
+                overflow: hidden;
+                white-space: normal;
+                text-overflow: ellipsis;
+                width: 100%;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+            .products__price{
+                width: 100%;
+                margin: 0 auto;
+                .products__inCart{
+                    p{
+                        margin:0 $mg-1 $mg-1;
+
+                    }
+                    button{
+                        margin:0 $mg-1 $mg-1;
+                        font-family: $ff-p;
+                        font-size: $fs-0;
+                        width: 20px;
+                        height: auto;
+                        box-shadow: none;
+                        border: none;
+                        border-radius: 2px;
+                        &:focus{
+                            box-shadow: none;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                }
+                .form-group{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    button{
+                        font-family: $ff-p;
+                        font-size: $fs-0;
+                        background: $color-orange-0;
+                        color: $color-white-0;
+                        &:hover{
+                            background: $color-blue-0;
+                            border: none;
+                        }
+                        &:focus{
+                            box-shadow: none;
+                            border: none;
+                        }
+                    }
+                   
+                }
+        }
+    }
+}
+}
+}

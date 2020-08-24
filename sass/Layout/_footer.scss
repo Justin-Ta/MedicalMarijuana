@@ -1,0 +1,124 @@
+.footer__picture{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: $mg-2;
+    padding: $pd-4 0;
+    .footer__picture__1{
+        transition: all 1s;
+        &:hover{
+            content: url('../../img/client-1.png');
+        }
+    }
+    .footer__picture__2{
+        transition: all 1s;
+        &:hover{
+            content: url('../../img/client-2.png');
+        }
+    }
+    .footer__picture__3{
+        transition: all 1s;
+        &:hover{
+            content: url('../../img/client-3.png');
+        }
+    }
+    .footer__picture__4{
+        transition: all 1s;
+        &:hover{
+            content: url('../../img/client-4.png');
+        }
+    }
+    .footer__picture__5{
+        transition: all 1s;
+        &:hover{
+            content: url('../../img/client-5.png');
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .footer__picture{
+        display: none;
+    }
+}
+footer{
+    .footer__content{
+        background-color: $color-green-1;
+        padding: $pd-5 0 $pd-1;
+        h3{
+            color: $color-white-0;
+            font-size: $fs-5;
+            margin-bottom: $mg-2;
+        }
+        p{
+            @include fontText($ff-tittle, $color-orange-0, $fs-2, $fstyle-1);
+        }
+        ul{
+            a{
+                @include fontText($ff-tittle, $color-orange-0, $fs-2, $fstyle-1);
+                &:hover{
+                    color: $color-white-0;
+                }
+            }
+        }
+        .footer__icon{
+            i{
+                @include circleItem(25px, 1px, $color-orange-0, $color-white-0);
+            }
+           
+        }
+        .form-group{
+            .footer__Email, .footer__Text{
+                @include textBox();
+                margin-bottom: $mg-1;
+            }
+            button{
+                color: $color-white-0;
+                background-color: transparent;
+                font-size: $fs-2;
+                border: 1px solid $color-white-0;
+                border-radius: 0;
+                padding: $pd-1 $pd-3;
+                &:hover{
+                    background-color: $color-orange-0;
+                    border-color: $color-orange-0;
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+        .footer__line{
+            position: relative;
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                left: 0;
+                bottom: 0;
+                background-color: $color-green-2;
+                opacity: 0.5;
+            }
+        }
+        .footer__copyRight{
+            p{  
+                text-align: center;
+                transition: all 0.5s;
+                margin-bottom: 0;
+                a{
+                    font-family: $ff-p;
+                    font-size: $fs-0;
+                    font-style: $fstyle-0;
+                    color: $color-gray-0;
+                    letter-spacing: 1.5px;
+                }
+                &:hover{
+                    a{
+                        color: $color-orange-0;
+                    }
+                }
+            } 
+        }
+    }
+}

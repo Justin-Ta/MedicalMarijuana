@@ -1,0 +1,25 @@
+.backToTop{
+    visibility: hidden;
+    opacity: 0;
+    i{
+        width: 50px;
+        height: 50px;
+        line-height: 40px;
+        border: 2px solid $color-green-0;
+        border-radius: 50%;
+        color: $color-white-0;
+        background: $color-green-0;
+        font-size: 2.5rem;
+        text-align: center;
+        position: fixed;
+        right: 30px;
+        bottom: 50px;
+    }
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 0.3;
+    &:hover{
+        opacity: 1;
+    }
+  }

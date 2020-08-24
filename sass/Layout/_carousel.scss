@@ -1,0 +1,87 @@
+.carousel{
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 60%;
+            margin: 0 auto;
+            text-align: center;
+        .Medical__carousel{ 
+            .carousel__content{
+                h2{
+                    font-size: $fs-6;
+                    color: $color-green-0;
+                }
+                p{
+                    font-family: $ff-tittle;
+                    font-size: $fs-2;
+                    color: $color-orange-0;
+                    font-weight: $fw-normal;
+                }
+            }
+            a{
+                margin-top: $mg-1;;
+                i{
+                    @include circleItem(58px, 1px, $color-orange-0, $color-orange-0);
+                    font-size: 30px;
+                }
+            }
+            
+        }
+    }
+    .carousel__img_1{
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        img{
+            width: 70%;
+            height: auto;
+        }
+    }
+    .carousel__img_2{
+        position: absolute;
+        top: 0;
+        left: 40%;
+        img{
+            width: 80%;
+            height: auto;
+        }
+    }
+    .carousel__img_3{
+        position: absolute;
+        top: 10%;
+        right: 25%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .carousel__img_4{
+        position: absolute;
+        top: 40%;
+        right: 5%;
+        img{
+            width: 60%;
+            height: auto;
+        }
+    }
+    .carousel__img_5{
+        position: absolute;
+        top: 10%;
+        right: -40px;
+        img{
+            width: 80%;
+            height: auto;
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    .carousel{
+        
+    }
+    .carousel__img_1, .carousel__img_2, .carousel__img_3, .carousel__img_4, .carousel__img_5{
+        display: none;
+    }
+}

@@ -1,0 +1,22 @@
+.aboutContent, .ourProductContent{
+    h1{
+        @include fontText($ff-tittle, $color-green-0, $fs-6, $fw-bold);
+    }
+    h3{
+        @include fontText($ff-tittle, $color-orange-0, $fs-2, $fstyle-1 );
+        
+    }
+    p{
+        @include fontText(null, $color-gray-0, $fs-0, $fstyle-0);
+    }
+}
+.ourProductItemt{
+    i{
+        color:$color-orange-0;
+        font-size: $fs-0;
+    }
+    h4{
+        @include fontText($ff-tittle, $color-green-0, $fs-3, null);
+    }
+}
+
